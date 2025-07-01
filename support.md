@@ -1,4 +1,4 @@
-# Supporto e Assistenza per Nome della tua App
+# Supporto e Assistenza per Tonee
 
 Hai bisogno di aiuto con l'app? Contattaci pure!
 
