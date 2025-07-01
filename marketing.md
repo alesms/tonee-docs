@@ -4,12 +4,6 @@
 
 <br/>
 
-<!-- Inserisci qui il link al badge dell'App Store -->
-<p align="center">
-  <a href="[INSERISCI QUI IL TUO LINK ALL'APP STORE]">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="150">
-  </a>
-</p>
 
 ---
 
@@ -44,17 +38,5 @@ Smetti di perdere tempo a decidere cosa indossare. Lascia che l'intelligenza art
 
 <br/>
 
-<!-- Inserisci qui il link al badge dell'App Store -->
-<p align="center">
-  <a href="[INSERISCI QUI IL TUO LINK ALL'APP STORE]">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
-  </a>
-</p>
 
 ---
-
-<p align="center">
-  <small>© 2024 Tonee. Tutti i diritti riservati.</small>
-  <br>
-  <small><a href="[INSERISCI URL PAGINA SUPPORTO]">Supporto</a> | <a href="[INSERISCI URL PRIVACY POLICY]">Privacy Policy</a></small>
-</p>
