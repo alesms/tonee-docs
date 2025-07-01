@@ -1,6 +1,6 @@
 # Supporto e Assistenza per Nome della tua App
 
-Hai bisogno di aiuto con l'app? Contattaci!
+Hai bisogno di aiuto con l'app? Contattaci pure!
 
 ## 📧 Email:
 Puoi scriverci all’indirizzo: [alessio.saggiomo@gmail.com](mailto:alessio.saggiomo@gmail.com)
