@@ -1,10 +1,10 @@
-# Supporto e Assistenza per Tonee
+# Support and Assistance for Tonee
 
-Hai bisogno di aiuto con l'app? Contattaci pure!
+Need help with the app? Feel free to reach out!
 
 ## 📧 Email:
-Puoi scriverci all’indirizzo: [alessio.saggiomo@gmail.com](mailto:alessio.saggiomo@gmail.com)
+You can write to us at: [alessio.saggiomo@gmail.com](mailto:alessio.saggiomo@gmail.com)
 
-## 🕑 Orari Assistenza:
-- Lun-Ven: 9:00-18:00 (CET)
-- Sab-Dom: Chiuso
+## 🕑 Support Hours:
+- Mon–Fri: 9:00 AM – 6:00 PM (CET)
+- Sat–Sun: Closed
