@@ -1,42 +1,40 @@
-# Tonee: Il Tuo Stile, Reinventato dall'Intelligenza Artificiale.
+# Tonee: Your Style, Reinvented by Artificial Intelligence.
 
-### Mai più senza idee davanti all'armadio. Tonee è l'app che combina il tuo guardaroba, le tue caratteristiche uniche e la potenza dell'AI per creare outfit perfetti per te, ogni giorno.
-
-<br/>
-
-
----
-
-## Trasforma il Tuo Stile in 3 Semplici Passi
-
-1.  **Digitalizza il Tuo Armadio**  
-    Fotografa i tuoi vestiti, scarpe e accessori. Il nostro sistema li riconoscerà e li catalogherà per te, creando il tuo guardaroba virtuale accessibile ovunque.
-
-2.  **Scopri Te Stessa**  
-    Lasciati guidare dalla nostra analisi per scoprire la tua stagione di armocromia e la tua body shape. Tonee userà queste informazioni per creare look che ti valorizzano davvero.
-
-3.  **Ricevi Outfit Infiniti**  
-    Chiedi a Tonee di creare un outfit per un'occasione specifica, per il meteo di oggi o semplicemente per darti ispirazione. Chatta con il tuo stilista personale AI e non sentirti mai più fuori posto.
-
----
-
-## Un Personal Shopper in Tasca
-
-*   **Stilista Personale AI:** Chatta con un'intelligenza artificiale esperta di moda. Chiedi consigli, crea abbinamenti e ottieni risposte immediate per ogni dubbio di stile.
-
-*   **Guardaroba Virtuale Intelligente:** Tieni traccia di tutto ciò che possiedi. Tonee ti aiuta a riscoprire capi che non usi e a massimizzare il potenziale del tuo armadio.
-
-*   **Analisi del Colore e della Forma:** Grazie all'analisi dell'armocromia e della body shape, Tonee impara a conoscere ciò che ti sta meglio, suggerendoti solo capi e colori che esaltano la tua bellezza naturale.
-
-*   **Outfit Basati sul Meteo:** Sincronizzato con le previsioni meteo locali, Tonee ti suggerisce l'outfit più adatto per non soffrire mai più il caldo o il freddo.
-
----
-
-## Pronto a Rivoluzionare il Tuo Stile?
-
-Smetti di perdere tempo a decidere cosa indossare. Lascia che l'intelligenza artificiale faccia il lavoro per te.
+### No more standing clueless in front of your wardrobe. Tonee combines your closet, your unique features, and the power of AI to create perfect outfits for you—every single day.
 
 <br/>
 
+---
+
+## Transform Your Style in 3 Simple Steps
+
+1.  **Digitize Your Wardrobe**  
+    Take photos of your clothes, shoes, and accessories. Our system will recognize and organize them into your personal virtual closet, accessible anytime, anywhere.
+
+2.  **Discover Yourself**  
+    Let our guided analysis reveal your color season and body shape. Tonee uses this to create looks that truly flatter you.
+
+3.  **Get Endless Outfit Ideas**  
+    Ask Tonee to create an outfit for a specific occasion, today’s weather, or just for inspiration. Chat with your personal AI stylist and never feel out of place again.
+
+---
+
+## A Personal Shopper in Your Pocket
+
+*   **AI Fashion Stylist:** Chat with a fashion-savvy AI. Get styling advice, mix and match outfits, and receive instant answers to your style questions.
+
+*   **Smart Virtual Closet:** Keep track of everything you own. Tonee helps you rediscover forgotten pieces and maximize the potential of your wardrobe.
+
+*   **Color and Shape Analysis:** Thanks to seasonal color analysis and body shape detection, Tonee learns what suits you best, recommending only the cuts and shades that enhance your natural beauty.
+
+*   **Weather-Based Outfits:** Synced with your local weather forecast, Tonee suggests the right outfit so you’ll never be too hot or too cold again.
+
+---
+
+## Ready to Revolutionize Your Style?
+
+Stop wasting time figuring out what to wear. Let artificial intelligence do the work for you.
+
+<br/>
 
 ---
