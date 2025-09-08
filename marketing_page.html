@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tonee - Dà un Tono al Tuo Stile</title>
+    <title>Tonee - Give Your Style a Tone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -157,24 +157,6 @@
             margin-right: auto;
         }
 
-        .cta-button {
-            display: inline-block;
-            background: var(--primary-color);
-            color: var(--white);
-            padding: var(--spacing-md) var(--spacing-xl);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-medium);
-        }
-
-        .cta-button:hover {
-            background: var(--accent-color);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(107, 91, 74, 0.2);
-        }
 
         /* Features Section */
         .features {
@@ -354,106 +336,6 @@
             color: var(--text-secondary);
         }
 
-        /* Pricing Section */
-        .pricing {
-            background: var(--background-light);
-            padding: var(--spacing-xxl) 0;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-lg);
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: var(--white);
-            padding: var(--spacing-xl);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-soft);
-            text-align: center;
-            position: relative;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured {
-            border-color: var(--primary-color);
-            transform: scale(1.05);
-        }
-
-        .pricing-card.featured::before {
-            content: 'Più Popolare';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary-color);
-            color: var(--white);
-            padding: var(--spacing-xs) var(--spacing-md);
-            border-radius: var(--radius-sm);
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
-        .pricing-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .pricing-card .price {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent-color);
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .pricing-card .period {
-            color: var(--text-secondary);
-            margin-bottom: var(--spacing-md);
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .pricing-features li {
-            padding: var(--spacing-xs) 0;
-            color: var(--text-secondary);
-            position: relative;
-            padding-left: var(--spacing-md);
-        }
-
-        .pricing-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success);
-            font-weight: bold;
-        }
-
-        .pricing-button {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-            padding: var(--spacing-md) var(--spacing-lg);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-block;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-
-        .pricing-button:hover, .pricing-card.featured .pricing-button {
-            background: var(--primary-color);
-            color: var(--white);
-        }
 
         /* Footer */
         .footer {
@@ -475,22 +357,6 @@
             margin: 0 auto var(--spacing-lg);
         }
 
-        .footer-cta {
-            background: var(--accent-color);
-            color: var(--white);
-            padding: var(--spacing-md) var(--spacing-xl);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .footer-cta:hover {
-            background: var(--secondary-color);
-            color: var(--primary-color);
-            transform: translateY(-2px);
-        }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -506,9 +372,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .pricing-card.featured {
-                transform: none;
-            }
             
             .container {
                 padding: 0 var(--spacing-sm);
@@ -532,7 +395,7 @@
             }
         }
 
-        .hero-container, .feature-card, .step, .audience-card, .pricing-card {
+        .hero-container, .feature-card, .step, .audience-card {
             animation: fadeInUp 0.8s ease-out;
         }
     </style>
@@ -543,10 +406,9 @@
         <nav class="nav-container">
             <a href="#" class="logo">Tonee</a>
             <ul class="nav-menu">
-                <li><a href="#funzionalita">Funzionalità</a></li>
-                <li><a href="#come-funziona">Come Funziona</a></li>
-                <li><a href="#prezzi">Prezzi</a></li>
-                <li><a href="#download">Scarica</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#who-its-for">Who It's For</a></li>
             </ul>
         </nav>
     </header>
@@ -554,94 +416,93 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Tonee: Dà un Tono al Tuo Stile</h1>
-            <p class="tagline">Il Tuo Assistente AI Personale per il Guardaroba</p>
+            <h1>Tonee: Give Your Style a Tone</h1>
+            <p class="tagline">Your Personal AI Wardrobe Assistant</p>
             <p class="subtitle">
-                Non più indecisioni davanti all'armadio. Tonee unisce il tuo guardaroba, le tue caratteristiche uniche 
-                e la potenza dell'intelligenza artificiale per creare outfit perfetti per te, ogni singolo giorno.
+                No more standing confused in front of your closet. Tonee combines your wardrobe, your unique features, 
+                and the power of artificial intelligence to create perfect outfits for you, every single day.
             </p>
-            <a href="#download" class="cta-button">Inizia Gratis Ora</a>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="funzionalita" class="features">
+    <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Trasforma il Tuo Stile in 3 Semplici Passi</h2>
-                <p>Scopri come Tonee rivoluziona il modo in cui scegli i tuoi outfit quotidiani</p>
+                <h2>Transform Your Style in 3 Simple Steps</h2>
+                <p>Discover how Tonee revolutionizes the way you choose your daily outfits</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>Digitalizza il Tuo Guardaroba</h3>
-                    <p>Fotografa i tuoi vestiti, scarpe e accessori. Il nostro sistema li riconoscerà e organizzerà nel tuo armadio virtuale personale, accessibile sempre e ovunque.</p>
+                    <h3>Digitize Your Wardrobe</h3>
+                    <p>Take photos of your clothes, shoes, and accessories. Our system will recognize and organize them in your personal virtual closet, accessible anytime, anywhere.</p>
                     <ul class="feature-list">
-                        <li>Aggiunta capi tramite foto, descrizione o link</li>
-                        <li>Classificazione automatica intelligente</li>
-                        <li>Riconoscimento di colore, materiale e vestibilità</li>
-                        <li>Organizzazione visuale intuitiva</li>
+                        <li>Add items via photos, descriptions, or links</li>
+                        <li>Smart automatic categorization</li>
+                        <li>Color, material, and fit recognition</li>
+                        <li>Intuitive visual organization</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3>Scopri Te Stesso</h3>
-                    <p>La nostra analisi guidata rivela la tua armocromia e la forma del tuo corpo. Tonee usa queste informazioni per creare look che ti valorizzano davvero.</p>
+                    <h3>Discover Yourself</h3>
+                    <p>Our guided analysis reveals your color season and body shape. Tonee uses this information to create looks that truly flatter you.</p>
                     <ul class="feature-list">
-                        <li>Calcolo dell'armocromia da foto o descrizione</li>
-                        <li>Analisi delle proporzioni corporee</li>
-                        <li>Supporto completo per daltonismo</li>
-                        <li>Consigli personalizzati sui colori</li>
+                        <li>Color analysis from photos or descriptions</li>
+                        <li>Body proportions analysis</li>
+                        <li>Complete support for color blindness</li>
+                        <li>Personalized color recommendations</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">✨</div>
-                    <h3>Outfit Infiniti e Personalizzati</h3>
-                    <p>Chiedi a Tonee di creare un outfit per un'occasione specifica, il meteo di oggi, o semplicemente per ispirazione. Chatta con il tuo stilista AI personale.</p>
+                    <h3>Endless Personalized Outfits</h3>
+                    <p>Ask Tonee to create an outfit for a specific occasion, today's weather, or just for inspiration. Chat with your personal AI stylist.</p>
                     <ul class="feature-list">
-                        <li>Suggerimenti basati su meteo e stagione</li>
-                        <li>Outfit per ogni occasione</li>
-                        <li>Chat conversazionale naturale</li>
-                        <li>Spiegazioni dettagliate per ogni scelta</li>
+                        <li>Weather and season-based suggestions</li>
+                        <li>Outfits for every occasion</li>
+                        <li>Natural conversational chat</li>
+                        <li>Detailed explanations for every choice</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🛍️</div>
-                    <h3>Shopping Intelligente</h3>
-                    <p>Ricevi consigli di acquisto solo quando li richiedi, con ricerca web in tempo reale e valutazione della compatibilità con il tuo stile esistente.</p>
+                    <h3>Smart Shopping</h3>
+                    <p>Get purchase recommendations only when you ask for them, with real-time web search and compatibility evaluation with your existing style.</p>
                     <ul class="feature-list">
-                        <li>Ricerca prodotti web in tempo reale</li>
-                        <li>Valutazione compatibilità con il tuo guardaroba</li>
-                        <li>Consigli acquisto mirati e motivati</li>
-                        <li>Assistente shopping in negozio</li>
+                        <li>Real-time web product search</li>
+                        <li>Compatibility evaluation with your wardrobe</li>
+                        <li>Targeted and motivated purchase advice</li>
+                        <li>In-store shopping assistant</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
-                    <h3>Assistente in Tempo Reale</h3>
-                    <p>Funziona come un ChatGPT della moda: chiedi consigli, carica foto per analisi immediate, ricevi proposte sempre motivate e personalizzate.</p>
+                    <h3>Real-Time Assistant</h3>
+                    <p>Works like a fashion ChatGPT: ask for advice, upload photos for instant analysis, receive always motivated and personalized suggestions.</p>
                     <ul class="feature-list">
-                        <li>Chat conversazionale senza form complessi</li>
-                        <li>Analisi foto in tempo reale</li>
-                        <li>Domande su abbinamenti specifici</li>
-                        <li>Motivazioni dettagliate per ogni consiglio</li>
+                        <li>Conversational chat without complex forms</li>
+                        <li>Real-time photo analysis</li>
+                        <li>Questions about specific combinations</li>
+                        <li>Detailed reasoning for every recommendation</li>
                     </ul>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🌈</div>
-                    <h3>Supporto per Daltonismo</h3>
-                    <p>Analisi automatica dei colori con spiegazioni dettagliate, pensato specificamente per chi ha difficoltà nel distinguere le tonalità.</p>
+                    <h3>Color Blindness Support</h3>
+                    <p>Automatic color analysis with detailed explanations, specifically designed for those who have difficulty distinguishing tones.</p>
                     <ul class="feature-list">
-                        <li>Analisi automatica dei colori</li>
-                        <li>Descrizioni dettagliate delle tonalità</li>
-                        <li>Consigli specifici per daltonici</li>
-                        <li>Interface accessibile e inclusiva</li>
+                        <li>Automatic color analysis</li>
+                        <li>Detailed tone descriptions</li>
+                        <li>Specific advice for color blind users</li>
+                        <li>Accessible and inclusive interface</li>
                     </ul>
                 </div>
             </div>
@@ -649,139 +510,82 @@
     </section>
 
     <!-- How it Works -->
-    <section id="come-funziona" class="how-it-works">
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>Come Funziona Tonee</h2>
-                <p>Semplice, veloce ed efficace: il tuo nuovo modo di vivere la moda</p>
+                <h2>How Tonee Works</h2>
+                <p>Simple, fast, and effective: your new way to experience fashion</p>
             </div>
 
             <div class="steps-grid">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Crea il Tuo Profilo</h3>
-                    <p>Inserisci le tue caratteristiche fisiche o carica delle foto. Tonee analizzerà la tua armocromia e le tue proporzioni per consigli sempre più precisi.</p>
+                    <h3>Choose Your Preferences</h3>
+                    <p>Select your clothing preference: masculine, feminine, or no preference. That's all you need to get started!</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Costruisci il Guardaroba Digitale</h3>
-                    <p>Fotografa i tuoi capi, aggiungi descrizioni o link. L'AI classificherà automaticamente tutto per categoria, colore, materiale e vestibilità.</p>
+                    <h3>Build Your Digital Wardrobe</h3>
+                    <p>Take photos of your clothes, add descriptions or links. AI will automatically classify everything by category, color, material, and fit.</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Chatta con Tonee</h3>
-                    <p>Chiedi outfit per ogni occasione, consiglio su abbinamenti, analisi di nuovi acquisti. Come avere uno stilista personale sempre disponibile.</p>
+                    <h3>Chat with Tonee</h3>
+                    <p>Ask for outfits for any occasion, advice on combinations, analysis of new purchases. Like having a personal stylist always available. Color and proportion analysis is completely optional!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Target Audience -->
-    <section class="target-audience">
+    <section id="who-its-for" class="target-audience">
         <div class="container">
             <div class="section-header">
-                <h2>Chi È Tonee Per Te?</h2>
-                <p>Scopri come Tonee può trasformare la tua esperienza con la moda</p>
+                <h2>Who Is Tonee For?</h2>
+                <p>Discover how Tonee can transform your fashion experience</p>
             </div>
 
             <div class="audience-grid">
                 <div class="audience-card">
                     <div class="audience-emoji">🤔</div>
-                    <h3>Se Sei Indeciso</h3>
-                    <p>Non sai mai cosa mettere? Tonee ti suggerisce outfit perfetti basati sul meteo, l'occasione e il tuo stile personale.</p>
+                    <h3>If You're Indecisive</h3>
+                    <p>Never know what to wear? Tonee suggests perfect outfits based on weather, occasion, and your personal style.</p>
                 </div>
 
                 <div class="audience-card">
                     <div class="audience-emoji">♻️</div>
-                    <h3>Se Vuoi Ottimizzare</h3>
-                    <p>Hai un armadio pieno ma indossi sempre le stesse cose? Scopri nuovi abbinamenti e sfrutta al massimo ogni capo.</p>
+                    <h3>If You Want to Optimize</h3>
+                    <p>Have a full closet but always wear the same things? Discover new combinations and make the most of every piece.</p>
                 </div>
 
                 <div class="audience-card">
                     <div class="audience-emoji">👁️</div>
-                    <h3>Se Hai Daltonismo</h3>
-                    <p>Difficoltà con i colori? Tonee analizza automaticamente le tonalità e ti spiega dettagliatamente ogni abbinamento cromatico.</p>
+                    <h3>If You Have Color Blindness</h3>
+                    <p>Difficulty with colors? Tonee automatically analyzes tones and explains every color combination in detail.</p>
                 </div>
 
                 <div class="audience-card">
                     <div class="audience-emoji">🛒</div>
-                    <h3>Se Vuoi Acquistare Smart</h3>
-                    <p>Stanco di comprare capi che non si abbinano? Ricevi consigli di acquisto coerenti con il tuo stile esistente.</p>
+                    <h3>If You Want to Shop Smart</h3>
+                    <p>Tired of buying clothes that don't match? Get purchase advice consistent with your existing style.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="prezzi" class="pricing">
+    <!-- Footer -->
+    <section class="footer">
         <div class="container">
-            <div class="section-header">
-                <h2>Scegli il Tuo Piano</h2>
-                <p>Inizia gratis e scopri il potere dell'AI per il tuo stile personale</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">€4.99</div>
-                    <div class="period">al mese</div>
-                    <ul class="pricing-features">
-                        <li>50 outfit generati al mese</li>
-                        <li>Guardaroba digitale illimitato</li>
-                        <li>Analisi armocromia e proporzioni</li>
-                        <li>Chat con assistente AI</li>
-                        <li>Suggerimenti meteo-based</li>
-                    </ul>
-                    <a href="#" class="pricing-button">Inizia Basic</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <h3>Plus</h3>
-                    <div class="price">€9.99</div>
-                    <div class="period">al mese</div>
-                    <ul class="pricing-features">
-                        <li>200 outfit generati al mese</li>
-                        <li>Tutto di Basic</li>
-                        <li>Assistente shopping avanzato</li>
-                        <li>Analisi capi in negozio</li>
-                        <li>Consigli acquisto personalizzati</li>
-                        <li>Supporto prioritario</li>
-                    </ul>
-                    <a href="#" class="pricing-button">Inizia Plus</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Pro</h3>
-                    <div class="price">€19.99</div>
-                    <div class="period">al mese</div>
-                    <ul class="pricing-features">
-                        <li>1000 outfit generati al mese</li>
-                        <li>Tutto di Plus</li>
-                        <li>Accesso anticipato a nuove funzioni</li>
-                        <li>Analisi avanzata tendenze</li>
-                        <li>Consulenza stilistica personalizzata</li>
-                        <li>Support dedicato</li>
-                    </ul>
-                    <a href="#" class="pricing-button">Inizia Pro</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer/CTA -->
-    <section id="download" class="footer">
-        <div class="container">
-            <h3>Pronto a Rivoluzionare il Tuo Stile?</h3>
+            <h3>Tonee - Your AI Wardrobe Assistant</h3>
             <p>
-                Smetti di perdere tempo a decidere cosa indossare. Lascia che l'intelligenza artificiale 
-                lavori per te e scopri un mondo di possibilità nel tuo guardaroba.
+                Stop wasting time deciding what to wear. Discover a world of possibilities 
+                in your wardrobe with Tonee's artificial intelligence.
             </p>
-            <a href="#" class="footer-cta">Scarica Tonee Gratis</a>
             
             <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2); opacity: 0.7; font-size: 0.9rem;">
-                <p>Disponibile per iOS e Android • Privacy garantita • Trial gratuito incluso</p>
+                <p>Available for iOS and Android • Privacy guaranteed</p>
             </div>
         </div>
     </section>
