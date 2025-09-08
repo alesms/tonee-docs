@@ -327,7 +327,7 @@
         <div class="hero-container">
             <h1>Informativa Privacy</h1>
             <p class="subtitle">Trasparenza completa su come trattiamo i tuoi dati personali</p>
-            <div class="last-updated">Ultimo aggiornamento: 15 gennaio 2025</div>
+            <div class="last-updated">Ultimo aggiornamento: 9 settembre 2025</div>
         </div>
     </section>
 
@@ -389,11 +389,6 @@
                         <td>Maschile, femminile, nessuna preferenza</td>
                         <td>Sì</td>
                     </tr>
-                    <tr>
-                        <td>Dati fisici</td>
-                        <td>Altezza, genere</td>
-                        <td>No</td>
-                    </tr>
                 </tbody>
             </table>
 
@@ -441,8 +436,8 @@
 
             <h3>2.5 Dati Tecnici e di Utilizzo</h3>
             <ul>
-                <li><strong>Dati di utilizzo:</strong> Funzionalità utilizzate, tempo di permanenza, azioni nell'app</li>
-                <li><strong>Dati tecnici:</strong> Tipo dispositivo, sistema operativo, ID installazione</li>
+                <li><strong>Dati di utilizzo:</strong> Eventi Firebase Analytics (funzionalità utilizzate, azioni nell'app)</li>
+                <li><strong>Dati tecnici:</strong> ID installazione Firebase, performance app</li>
                 <li><strong>Dati di geolocalizzazione:</strong> Posizione approssimativa (solo se autorizzata) per suggerimenti meteo</li>
             </ul>
 
@@ -507,11 +502,11 @@
                         <td>Art. 6(1)(b) - Esecuzione contratto</td>
                     </tr>
                     <tr>
-                        <td>Analisi armocromatica</td>
-                        <td>Art. 6(1)(a) - Consenso esplicito</td>
+                        <td>Analisi armocromatica opzionale</td>
+                        <td>Art. 6(1)(b) - Esecuzione contratto</td>
                     </tr>
                     <tr>
-                        <td>Analytics e miglioramento</td>
+                        <td>Firebase Analytics</td>
                         <td>Art. 6(1)(f) - Interesse legittimo</td>
                     </tr>
                     <tr>
@@ -581,7 +576,7 @@
                         <td><strong>Serper</strong></td>
                         <td>Ricerca prodotti web</td>
                         <td>Query di ricerca, preferenze stile</td>
-                        <td><a href="https://serper.dev/privacy-policy" target="_blank">Serper Privacy</a></td>
+                        <td><a href="https://serper.dev/privacy" target="_blank">Serper Privacy</a></td>
                     </tr>
                     <tr>
                         <td><strong>OpenWeatherMap</strong></td>
@@ -621,19 +616,9 @@
                         <td>Funzionalità core</td>
                     </tr>
                     <tr>
-                        <td>Conversazioni chat</td>
-                        <td>24 mesi</td>
-                        <td>Miglioramento AI</td>
-                    </tr>
-                    <tr>
-                        <td>Dati analytics aggregati</td>
-                        <td>36 mesi</td>
-                        <td>Sviluppo prodotto</td>
-                    </tr>
-                    <tr>
-                        <td>Dati fatturazione</td>
-                        <td>10 anni</td>
-                        <td>Obbligo fiscale</td>
+                        <td>File immagini chat</td>
+                        <td>24 ore</td>
+                        <td>Pulizia automatica storage</td>
                     </tr>
                 </tbody>
             </table>
@@ -662,12 +647,10 @@
                 <li><strong>Opposizione (Art. 21):</strong> Opporti a specifici trattamenti</li>
             </ul>
 
-            <h3>7.2 Gestione Consensi</h3>
+            <h3>7.2 Controlli Privacy Disponibili</h3>
             <ul>
-                <li>Revocare consenso per analisi armocromatica</li>
-                <li>Disabilitare geolocalizzazione</li>
-                <li>Opt-out da analytics comportamentali</li>
-                <li>Controllo cookie non essenziali</li>
+                <li>Gestire permesso geolocalizzazione (nelle impostazioni profilo)</li>
+                <li>Richiedere cancellazione account completa</li>
             </ul>
 
             <h3>7.3 Come Esercitare i Diritti</h3>
@@ -685,18 +668,17 @@
 
             <h3>8.1 Misure Tecniche</h3>
             <ul>
-                <li><strong>Crittografia:</strong> Tutti i dati sono criptati in transito (TLS 1.3) e a riposo (AES-256)</li>
-                <li><strong>Autenticazione:</strong> Sistemi sicuri con Google OAuth 2.0</li>
-                <li><strong>Backup:</strong> Copie di sicurezza crittografate e ridondanti</li>
-                <li><strong>Monitoraggio:</strong> Rilevamento anomalie e tentativi di accesso non autorizzato</li>
+                <li><strong>Autenticazione sicura:</strong> Google OAuth 2.0</li>
+                <li><strong>Storage sicuro:</strong> Dati gestiti tramite Supabase (conforme SOC 2)</li>
+                <li><strong>Credenziali locali:</strong> Flutter Secure Storage per dati sensibili</li>
+                <li><strong>Connessioni sicure:</strong> HTTPS per tutte le comunicazioni</li>
             </ul>
 
             <h3>8.2 Misure Organizzative</h3>
             <ul>
-                <li>Accesso ai dati limitato al personale autorizzato</li>
-                <li>Formazione continua sulla privacy e sicurezza</li>
-                <li>Audit periodici dei sistemi di sicurezza</li>
-                <li>Protocolli di risposta a incidenti di sicurezza</li>
+                <li>Accesso ai sistemi limitato al titolare del trattamento</li>
+                <li>Utilizzo esclusivo di fornitori conformi a standard internazionali (SOC 2, ISO 27001)</li>
+                <li>Sistema di cancellazione account automatica implementato</li>
             </ul>
         </section>
 
@@ -760,7 +742,7 @@
                         <td>Analytics</td>
                         <td>Firebase Analytics, performance</td>
                         <td>2 anni</td>
-                        <td>Sì</td>
+                        <td>No - sempre attivo</td>
                     </tr>
                     <tr>
                         <td>Preferenze</td>
@@ -781,7 +763,7 @@
             </ul>
 
             <div class="highlight-box">
-                <p><strong>Controllo Privacy:</strong> Puoi disabilitare Firebase Analytics nelle impostazioni dell'app senza compromettere il funzionamento principale.</p>
+                <p><strong>Nota:</strong> Firebase Analytics è sempre attivo per garantire il corretto funzionamento e il miglioramento continuo dell'app. Non raccoglie dati personali identificativi diretti.</p>
             </div>
         </section>
 
@@ -836,7 +818,7 @@
     <!-- Footer -->
     <section class="footer">
         <div class="content">
-            <p>Tonee - Informativa Privacy | Ultimo aggiornamento: 15 gennaio 2025</p>
+            <p>Tonee - Informativa Privacy | Ultimo aggiornamento: 9 settembre 2025</p>
         </div>
     </section>
 </body>
