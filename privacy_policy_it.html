@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonee - Informativa Privacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Design System Tonee - Palette Calda e Neutra */
+            --primary-color: #6B5B4A;        /* Marrone scuro */
+            --secondary-color: #F5F1EB;      /* Beige chiaro */
+            --accent-color: #8B7355;         /* Marrone caldo */
+            --background-light: #FAF8F3;     /* Panna/crema chiaro */
+            --background-beige: #F5F1EB;     /* Beige chiaro */
+            --text-secondary: #9B8B7A;       /* Testo secondario caldo */
+            --white: #ffffff;
+            --medium-beige: #E8E0D6;
+            --soft-gray: #F7F7F7;
+            
+            /* Colori funzionali */
+            --success: #5A8B5A;
+            --error: #D44444;
+            --warning: #E6A555;
+            --info: #7A9CC6;
+            
+            /* Typography */
+            --font-primary: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-xxl: 4rem;
+            
+            /* Border radius */
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            
+            /* Shadows */
+            --shadow-soft: 0 4px 20px rgba(107, 91, 74, 0.1);
+            --shadow-medium: 0 8px 32px rgba(107, 91, 74, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: var(--shadow-soft);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--background-light) 0%, var(--secondary-color) 100%);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 40%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(139, 115, 85, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .last-updated {
+            background: var(--info);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-xxl) var(--spacing-md);
+        }
+
+        .toc {
+            background: var(--background-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-xxl);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .toc h2 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.3rem;
+        }
+
+        .toc ol {
+            padding-left: var(--spacing-md);
+        }
+
+        .toc li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .toc a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .toc a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: var(--spacing-xxl);
+            padding-bottom: var(--spacing-xl);
+            border-bottom: 1px solid var(--soft-gray);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+        }
+
+        .section h3 {
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin: var(--spacing-lg) 0 var(--spacing-md);
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: var(--spacing-md);
+            text-align: justify;
+        }
+
+        .section ul, .section ol {
+            margin: var(--spacing-md) 0;
+            padding-left: var(--spacing-lg);
+        }
+
+        .section li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .highlight-box {
+            background: var(--secondary-color);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--accent-color);
+            margin: var(--spacing-md) 0;
+        }
+
+        .contact-info {
+            background: var(--background-light);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .email-link:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-md) 0;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: var(--spacing-md);
+            text-align: left;
+            border-bottom: 1px solid var(--soft-gray);
+        }
+
+        .data-table th {
+            background: var(--secondary-color);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .data-table tr:hover {
+            background: var(--background-light);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                padding: var(--spacing-lg) var(--spacing-sm);
+            }
+            
+            .toc {
+                padding: var(--spacing-md);
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: var(--spacing-sm);
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Tonee</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Informativa Privacy</h1>
+            <p class="subtitle">Trasparenza completa su come trattiamo i tuoi dati personali</p>
+            <div class="last-updated">Ultimo aggiornamento: 15 gennaio 2025</div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Indice dei Contenuti</h2>
+            <ol>
+                <li><a href="#titolare">Titolare del Trattamento</a></li>
+                <li><a href="#dati-raccolti">Dati Personali Raccolti</a></li>
+                <li><a href="#finalita">Finalità del Trattamento</a></li>
+                <li><a href="#base-giuridica">Base Giuridica</a></li>
+                <li><a href="#servizi-terzi">Servizi di Terze Parti</a></li>
+                <li><a href="#conservazione">Conservazione dei Dati</a></li>
+                <li><a href="#diritti-utente">I Tuoi Diritti</a></li>
+                <li><a href="#sicurezza">Sicurezza dei Dati</a></li>
+                <li><a href="#trasferimenti">Trasferimenti Internazionali</a></li>
+                <li><a href="#cookie">Cookie e Analytics</a></li>
+                <li><a href="#minori">Protezione dei Minori</a></li>
+                <li><a href="#modifiche">Modifiche alla Privacy Policy</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1: Titolare -->
+        <section id="titolare" class="section">
+            <h2>1. Titolare del Trattamento</h2>
+            <div class="highlight-box">
+                <p><strong>Alessio Saggiomo</strong><br>
+                Via Lorenteggio, 3<br>
+                20146 Milano, Italia<br>
+                Email: <a href="mailto:toneeoutfit@gmail.com" class="email-link">toneeoutfit@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- Section 2: Dati Raccolti -->
+        <section id="dati-raccolti" class="section">
+            <h2>2. Dati Personali Raccolti</h2>
+            <p>Tonee raccoglie e tratta diverse categorie di dati personali per fornire un servizio di styling personalizzato basato su intelligenza artificiale.</p>
+            
+            <h3>2.1 Dati di Registrazione e Profilo</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Categoria Dati</th>
+                        <th>Esempi</th>
+                        <th>Obbligatorio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dati identificativi</td>
+                        <td>Nome, email</td>
+                        <td>Sì</td>
+                    </tr>
+                    <tr>
+                        <td>Preferenze di stile</td>
+                        <td>Maschile, femminile, nessuna preferenza</td>
+                        <td>Sì</td>
+                    </tr>
+                    <tr>
+                        <td>Dati fisici</td>
+                        <td>Altezza, genere</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.2 Dati per Analisi Armocromatica (Opzionali)</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Categoria Dati</th>
+                        <th>Esempi</th>
+                        <th>Finalità</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Caratteristiche cromatiche</td>
+                        <td>Tono della pelle, colore occhi, colore capelli</td>
+                        <td>Consigli colori personalizzati</td>
+                    </tr>
+                    <tr>
+                        <td>Foto del viso</td>
+                        <td>Immagini per analisi armocromatica</td>
+                        <td>Calcolo automatico stagione cromatica</td>
+                    </tr>
+                    <tr>
+                        <td>Parametri avanzati</td>
+                        <td>Sottotono, contrasto</td>
+                        <td>Analisi dettagliata colori</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.3 Guardaroba Digitale</h3>
+            <ul>
+                <li><strong>Foto dei capi:</strong> Immagini di vestiti, scarpe e accessori</li>
+                <li><strong>Metadati dei capi:</strong> Categoria, colore, materiale, vestibilità, descrizione</li>
+                <li><strong>Link esterni:</strong> URL di prodotti da negozi online (opzionale)</li>
+            </ul>
+
+            <h3>2.4 Dati di Interazione</h3>
+            <ul>
+                <li><strong>Conversazioni chat:</strong> Messaggi con l'assistente AI per richieste di styling</li>
+                <li><strong>Cronologia outfit:</strong> Combinazioni di capi suggerite e feedback</li>
+                <li><strong>Preferenze comportamentali:</strong> Scelte e rifiuti di suggerimenti</li>
+            </ul>
+
+            <h3>2.5 Dati Tecnici e di Utilizzo</h3>
+            <ul>
+                <li><strong>Dati di utilizzo:</strong> Funzionalità utilizzate, tempo di permanenza, azioni nell'app</li>
+                <li><strong>Dati tecnici:</strong> Tipo dispositivo, sistema operativo, ID installazione</li>
+                <li><strong>Dati di geolocalizzazione:</strong> Posizione approssimativa (solo se autorizzata) per suggerimenti meteo</li>
+            </ul>
+
+            <h3>2.6 Dati di Monetizzazione</h3>
+            <ul>
+                <li><strong>Stato abbonamento:</strong> Piano attivo, data scadenza, cronologia pagamenti</li>
+                <li><strong>Contatori utilizzo:</strong> Numero di outfit generati, crediti utilizzati</li>
+                <li><strong>ID transazioni:</strong> Identificatori Apple/Google per acquisti in-app</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Finalità -->
+        <section id="finalita" class="section">
+            <h2>3. Finalità del Trattamento</h2>
+            
+            <h3>3.1 Fornitura del Servizio</h3>
+            <ul>
+                <li>Generazione di outfit personalizzati tramite intelligenza artificiale</li>
+                <li>Analisi armocromatica e suggerimenti colori</li>
+                <li>Gestione del guardaroba digitale</li>
+                <li>Ricerca e suggerimento prodotti compatibili</li>
+                <li>Assistente conversazionale per consigli di styling</li>
+            </ul>
+
+            <h3>3.2 Personalizzazione</h3>
+            <ul>
+                <li>Adattamento suggerimenti in base al profilo utente</li>
+                <li>Miglioramento dell'accuratezza dei consigli nel tempo</li>
+                <li>Suggerimenti basati su condizioni meteo e occasioni</li>
+            </ul>
+
+            <h3>3.3 Funzionalità Tecniche</h3>
+            <ul>
+                <li>Autenticazione e sicurezza account</li>
+                <li>Gestione abbonamenti e pagamenti</li>
+                <li>Backup e sincronizzazione dati</li>
+                <li>Supporto tecnico e customer care</li>
+            </ul>
+
+            <h3>3.4 Analytics e Miglioramento</h3>
+            <ul>
+                <li>Analisi comportamentale per migliorare l'esperienza utente</li>
+                <li>Statistiche di utilizzo per sviluppo nuove funzionalità</li>
+                <li>Monitoraggio performance e stabilità dell'app</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: Base Giuridica -->
+        <section id="base-giuridica" class="section">
+            <h2>4. Base Giuridica del Trattamento</h2>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Finalità</th>
+                        <th>Base Giuridica (GDPR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fornitura servizio di styling</td>
+                        <td>Art. 6(1)(b) - Esecuzione contratto</td>
+                    </tr>
+                    <tr>
+                        <td>Analisi armocromatica</td>
+                        <td>Art. 6(1)(a) - Consenso esplicito</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics e miglioramento</td>
+                        <td>Art. 6(1)(f) - Interesse legittimo</td>
+                    </tr>
+                    <tr>
+                        <td>Gestione pagamenti</td>
+                        <td>Art. 6(1)(c) - Obbligo legale</td>
+                    </tr>
+                    <tr>
+                        <td>Supporto tecnico</td>
+                        <td>Art. 6(1)(f) - Interesse legittimo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 5: Servizi Terzi -->
+        <section id="servizi-terzi" class="section">
+            <h2>5. Servizi di Terze Parti</h2>
+            <p>Tonee integra diversi servizi di terze parti per fornire funzionalità avanzate:</p>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Servizio</th>
+                        <th>Finalità</th>
+                        <th>Dati Condivisi</th>
+                        <th>Privacy Policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Google LLC</strong></td>
+                        <td>Autenticazione, Analytics</td>
+                        <td>Email, nome, ID utente, dati utilizzo</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenAI</strong></td>
+                        <td>Intelligenza artificiale per styling</td>
+                        <td>Foto capi, caratteristiche fisiche, conversazioni</td>
+                        <td><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anthropic</strong></td>
+                        <td>AI alternativa (Claude)</td>
+                        <td>Conversazioni, richieste styling</td>
+                        <td><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Supabase</strong></td>
+                        <td>Database e storage</td>
+                        <td>Tutti i dati utente</td>
+                        <td><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase</strong></td>
+                        <td>Analytics comportamentali</td>
+                        <td>Eventi app, performance, errori</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank">Firebase Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apple Inc.</strong></td>
+                        <td>In-App Purchase, notifiche</td>
+                        <td>ID transazione, stato abbonamento</td>
+                        <td><a href="https://www.apple.com/privacy" target="_blank">Apple Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Serper</strong></td>
+                        <td>Ricerca prodotti web</td>
+                        <td>Query di ricerca, preferenze stile</td>
+                        <td><a href="https://serper.dev/privacy-policy" target="_blank">Serper Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenWeatherMap</strong></td>
+                        <td>Dati meteorologici</td>
+                        <td>Posizione approssimativa</td>
+                        <td><a href="https://openweathermap.org/privacy-policy" target="_blank">OpenWeather Privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <p><strong>Importante:</strong> Tutti i servizi di terze parti rispettano standard di sicurezza internazionali. I trasferimenti di dati verso paesi extra-UE sono protetti da adeguate garanzie (Privacy Shield, Clausole Contrattuali Standard, o decisioni di adeguatezza della Commissione Europea).</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Conservazione -->
+        <section id="conservazione" class="section">
+            <h2>6. Conservazione dei Dati</h2>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Categoria Dati</th>
+                        <th>Periodo di Conservazione</th>
+                        <th>Criterio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dati profilo attivo</td>
+                        <td>Fino a cancellazione account</td>
+                        <td>Necessità servizio</td>
+                    </tr>
+                    <tr>
+                        <td>Guardaroba digitale</td>
+                        <td>Fino a cancellazione account</td>
+                        <td>Funzionalità core</td>
+                    </tr>
+                    <tr>
+                        <td>Conversazioni chat</td>
+                        <td>24 mesi</td>
+                        <td>Miglioramento AI</td>
+                    </tr>
+                    <tr>
+                        <td>Dati analytics aggregati</td>
+                        <td>36 mesi</td>
+                        <td>Sviluppo prodotto</td>
+                    </tr>
+                    <tr>
+                        <td>Dati fatturazione</td>
+                        <td>10 anni</td>
+                        <td>Obbligo fiscale</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>6.1 Cancellazione Account</h3>
+            <p>Alla cancellazione dell'account, tutti i dati personali vengono:</p>
+            <ul>
+                <li><strong>Immediatamente eliminati:</strong> Profilo, guardaroba, foto</li>
+                <li><strong>Anonimizzati:</strong> Dati statistici (rimozione identificativi personali)</li>
+                <li><strong>Conservati solo se obbligatorio:</strong> Dati fiscali per termini di legge</li>
+            </ul>
+        </section>
+
+        <!-- Section 7: Diritti Utente -->
+        <section id="diritti-utente" class="section">
+            <h2>7. I Tuoi Diritti (GDPR)</h2>
+            <p>Hai il pieno controllo sui tuoi dati personali. Puoi esercitare i seguenti diritti:</p>
+
+            <h3>7.1 Diritti Fondamentali</h3>
+            <ul>
+                <li><strong>Accesso (Art. 15):</strong> Ottenere copia di tutti i tuoi dati</li>
+                <li><strong>Rettifica (Art. 16):</strong> Correggere dati inesatti o incompleti</li>
+                <li><strong>Cancellazione (Art. 17):</strong> "Diritto all'oblio" - eliminazione completa</li>
+                <li><strong>Limitazione (Art. 18):</strong> Bloccare temporaneamente il trattamento</li>
+                <li><strong>Portabilità (Art. 20):</strong> Ricevere dati in formato strutturato</li>
+                <li><strong>Opposizione (Art. 21):</strong> Opporti a specifici trattamenti</li>
+            </ul>
+
+            <h3>7.2 Gestione Consensi</h3>
+            <ul>
+                <li>Revocare consenso per analisi armocromatica</li>
+                <li>Disabilitare geolocalizzazione</li>
+                <li>Opt-out da analytics comportamentali</li>
+                <li>Controllo cookie non essenziali</li>
+            </ul>
+
+            <h3>7.3 Come Esercitare i Diritti</h3>
+            <div class="highlight-box">
+                <p>Invia richiesta a: <a href="mailto:toneeoutfit@gmail.com" class="email-link">toneeoutfit@gmail.com</a></p>
+                <p><strong>Tempi di risposta:</strong> Massimo 30 giorni (gratuito)</p>
+                <p><strong>Documenti richiesti:</strong> Copia documento identità per verifica</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Sicurezza -->
+        <section id="sicurezza" class="section">
+            <h2>8. Sicurezza dei Dati</h2>
+            <p>Implementiamo misure tecniche e organizzative avanzate per proteggere i tuoi dati:</p>
+
+            <h3>8.1 Misure Tecniche</h3>
+            <ul>
+                <li><strong>Crittografia:</strong> Tutti i dati sono criptati in transito (TLS 1.3) e a riposo (AES-256)</li>
+                <li><strong>Autenticazione:</strong> Sistemi sicuri con Google OAuth 2.0</li>
+                <li><strong>Backup:</strong> Copie di sicurezza crittografate e ridondanti</li>
+                <li><strong>Monitoraggio:</strong> Rilevamento anomalie e tentativi di accesso non autorizzato</li>
+            </ul>
+
+            <h3>8.2 Misure Organizzative</h3>
+            <ul>
+                <li>Accesso ai dati limitato al personale autorizzato</li>
+                <li>Formazione continua sulla privacy e sicurezza</li>
+                <li>Audit periodici dei sistemi di sicurezza</li>
+                <li>Protocolli di risposta a incidenti di sicurezza</li>
+            </ul>
+        </section>
+
+        <!-- Section 9: Trasferimenti -->
+        <section id="trasferimenti" class="section">
+            <h2>9. Trasferimenti Internazionali</h2>
+            <p>Alcuni dei nostri fornitori di servizi sono localizzati al di fuori dell'Unione Europea:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Servizio</th>
+                        <th>Paese</th>
+                        <th>Garanzie di Protezione</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OpenAI</td>
+                        <td>USA</td>
+                        <td>Clausole Contrattuali Standard UE</td>
+                    </tr>
+                    <tr>
+                        <td>Google/Firebase</td>
+                        <td>USA</td>
+                        <td>Data Privacy Framework USA-UE</td>
+                    </tr>
+                    <tr>
+                        <td>Anthropic</td>
+                        <td>USA</td>
+                        <td>Clausole Contrattuali Standard UE</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Tutti i trasferimenti rispettano i requisiti dell'Art. 44-49 del GDPR e sono coperti da adeguate garanzie per proteggere i tuoi diritti.</p>
+        </section>
+
+        <!-- Section 10: Cookie -->
+        <section id="cookie" class="section">
+            <h2>10. Cookie e Tecnologie di Tracciamento</h2>
+            
+            <h3>10.1 Cookie Utilizzati</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Finalità</th>
+                        <th>Durata</th>
+                        <th>Consenso Richiesto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Essenziali</td>
+                        <td>Funzionamento app, autenticazione</td>
+                        <td>Sessione</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics</td>
+                        <td>Firebase Analytics, performance</td>
+                        <td>2 anni</td>
+                        <td>Sì</td>
+                    </tr>
+                    <tr>
+                        <td>Preferenze</td>
+                        <td>Salvataggio impostazioni utente</td>
+                        <td>1 anno</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>10.2 Analytics Firebase</h3>
+            <p>Utilizziamo Firebase Analytics per:</p>
+            <ul>
+                <li>Comprendere come gli utenti interagiscono con l'app</li>
+                <li>Identificare funzionalità più utilizzate</li>
+                <li>Rilevare e correggere errori tecnici</li>
+                <li>Migliorare performance e stabilità</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Controllo Privacy:</strong> Puoi disabilitare Firebase Analytics nelle impostazioni dell'app senza compromettere il funzionamento principale.</p>
+            </div>
+        </section>
+
+        <!-- Section 11: Minori -->
+        <section id="minori" class="section">
+            <h2>11. Protezione dei Minori</h2>
+            <p>Tonee è destinato a utenti di età superiore ai 16 anni (o età minima prevista dalla legislazione locale per il consenso digitale).</p>
+            
+            <ul>
+                <li>Non raccogliamo consapevolmente dati di minori di 16 anni</li>
+                <li>Se veniamo a conoscenza di dati di minori, procediamo alla cancellazione immediata</li>
+                <li>I genitori possono contattarci per segnalazioni relative a minori</li>
+            </ul>
+        </section>
+
+        <!-- Section 12: Modifiche -->
+        <section id="modifiche" class="section">
+            <h2>12. Modifiche alla Privacy Policy</h2>
+            <p>Questa informativa può essere aggiornata per riflettere:</p>
+            <ul>
+                <li>Nuove funzionalità dell'app</li>
+                <li>Cambiamenti normativi</li>
+                <li>Miglioramenti dei processi di privacy</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Notifiche:</strong> Ti informeremo di modifiche sostanziali tramite notifica nell'app o email. La data di "Ultimo aggiornamento" indica la versione più recente.</p>
+            </div>
+        </section>
+
+        <!-- Section 13: Contatti -->
+        <section id="contatti" class="section">
+            <div class="contact-info">
+                <h2>13. Contatti</h2>
+                <p>Per qualsiasi domanda sulla privacy o sui tuoi dati personali:</p>
+                <h3>Responsabile Privacy</h3>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:toneeoutfit@gmail.com" class="email-link">toneeoutfit@gmail.com</a><br>
+                    <strong>Oggetto:</strong> "Privacy - [Tua Richiesta]"
+                </p>
+                <p><strong>Risposta garantita entro 30 giorni</strong></p>
+                
+                <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-lg); border-top: 1px solid var(--soft-gray);">
+                    <p style="font-size: 0.9rem; opacity: 0.8;">
+                        Hai anche il diritto di presentare reclamo all'Autorità Garante per la Protezione dei Dati Personali italiana se ritieni che il trattamento dei tuoi dati non sia conforme al GDPR.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="content">
+            <p>Tonee - Informativa Privacy | Ultimo aggiornamento: 15 gennaio 2025</p>
+        </div>
+    </section>
+</body>
+</html>
